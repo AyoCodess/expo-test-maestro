@@ -1,0 +1,20 @@
+appId: com.wptechtest.app
+---
+- launchApp:
+    clearState: true
+    appId: com.wptechtest.app
+- openLink: exp://192.168.1.200:19001
+#button should be visible
+- tapOn: "Welcome to the template app"
+- assertVisible: "Quick Start"
+
+
+
+# appId: com.apple.MobileAddressBook
+# ---
+# - launchApp
+# - tapOn: "John Appleseed"
+# - tapOn: "Edit"
+# - tapOn: "Add phone"
+# - inputText: "123123"
+# - tapOn: "Done"

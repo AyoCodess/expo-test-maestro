@@ -1,0 +1,57 @@
+{
+  "name": "expo-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "dev": "tsc --noEmit && expo start -c",
+    "clean": "rm -rf node_modules",
+    "doctor": "npx expo-cli doctor",
+    "studio": "maestro studio",
+    "test": "maestro test .expo-maestro",
+    "t": "maestro test .expo-maestro/buttons.yaml",
+    "build-app-file-prod": "eas build -p ios --clear-cache",
+    "build-app-file-local": "eas build --platform ios --local --clear-cache",
+    "preview-prod": "eas build -p ios --profile preview",
+    "preview-local": "eas build --platform ios --profile preview --local",
+    "patch": "patch-package"
+  },
+  "dependencies": {
+    "@expo/config-plugins": "~6.0.0",
+    "@headlessui/react": "^1.7.14",
+    "@react-navigation/bottom-tabs": "^6.4.0",
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/native-stack": "^6.9.1",
+    "@types/react": "~18.0.27",
+    "class-variance-authority": "^0.5.2",
+    "clsx": "^1.2.1",
+    "expo": "~48.0.11",
+    "expo-status-bar": "~1.4.4",
+    "expo-system-ui": "~2.2.1",
+    "nativewind": "=3.0.0-next.34",
+    "patch-package": "^6.5.1",
+    "postinstall-postinstall": "^2.1.0",
+    "react": "18.2.0",
+    "react-native": "0.71.7",
+    "react-native-reanimated": "~2.14.4",
+    "react-native-safe-area-context": "4.5.0",
+    "react-native-screens": "~3.20.0",
+    "tailwind-merge": "^1.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "npm-check-updates": "^16.10.8",
+    "tailwindcss": "^3.3.1",
+    "typescript": "^4.9.4"
+  },
+  "overrides": {
+    "@expo/config-plugins": "~6.0.0",
+    "@expo/prebuild-config": "~6.0.0"
+  },
+  "private": true
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["./src/app/ui/*"],
+      "@/*": ["./src/app/*"]
+    }
+  },
+  "extends": "expo/tsconfig.base"
+}
