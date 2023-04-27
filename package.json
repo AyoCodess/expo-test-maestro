@@ -18,7 +18,7 @@
     "build-app-file-local": "eas build --platform ios --local --clear-cache",
     "preview-prod": "eas build -p ios --profile preview",
     "preview-local": "eas build --platform ios --profile preview --local",
-    "patch": "patch-package"
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@expo/config-plugins": "~6.0.0",
